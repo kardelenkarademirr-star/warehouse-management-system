@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+@import 'sweetalert2/dist/sweetalert2.min.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.nav-link, .navbar-brand {
+    font-family: 'Mali', cursive;
+}
+
+h1, h2, h3 {
+    font-family: 'Sriracha', cursive;
+    font-weight: 600;
+    color: #789DBC;
+}
+
+h5 {
+    font-family: 'Mali', cursive;
+    color: #346739
+}
+
+.box {
+    background-color: #FFEABB;
+    text-align: center;
+}
+
+.sidebar {
+    font-family: 'Sriracha', cursive;
+    min-width: 210px;
+    max-width: 210px; 
+    color: #fff;
+    transition: margin-left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.collapsed {
+    margin-left: -210px;
+}
+
+.menu {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Mali', cursive;
+    text-decoration: none;
+    margin: 20px;
+    padding-bottom: 18px;
+    color: #FF937E;
+}
+
+.sidebar-link {
+    display: block;
+    color: #79AE6F;
+    font-weight: bold;
+    font-size: medium;
+    text-decoration: none;
+    transition: all .02s ease;
+}
+
+.sidebar-link:hover {
+    color: #FEF9F2;
+    border-radius: 9px;
+    padding:6px;
+}
+
+.sidebar-item {
+    margin-bottom: 24px;
+    margin-right: 9px;
+    padding:9px;
+    border-radius: 9px;
+    background-color: #FBC3C1;
+}
+
+.main-content {
+    transition: all 0.3s ease;
+}
+
+.btn-view {
+    color: white;
+    background-color: #1e40af; 
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.btn-view:hover {
+    background-color: #1e40afbd;
+    color:white;
+}
